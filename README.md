@@ -12,5 +12,5 @@ C. Products list is available in file ./src/data/items.json.
 D. Instruction to run application
 
 	- npm install
-    
-	- npm run
+
+	- npm start
