@@ -10,5 +10,7 @@ B. User can add rules/remove rules in Textarea.
 C. Products list is available in file ./src/data/items.json.
 
 D. Instruction to run application
+
 	- npm install
+    
 	- npm run
