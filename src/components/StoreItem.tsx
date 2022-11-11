@@ -15,13 +15,13 @@ const StoreItem = (product: Product) => {
 
   return (
     <Card className="h-100">
-      
+
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2">{product.name}</span>
           <span className="ms-2 text-muted">{formatCurrency(product.price)}</span>
         </Card.Title>
-        <div className="mt-auto">
+        <div>
           {quantity === 0 ? (
             <Button className="w-100" onClick={() => dispatch(increaseCartQuantity(product))}>
               Add To Cart
@@ -37,7 +37,7 @@ const StoreItem = (product: Product) => {
               >
                 <Button onClick={() => dispatch(decreaseCartQuantity(product))}>-</Button>
                 <div>
-                  <span className="fs-3">{quantity + ''}</span> 
+                  <span className="fs-3">{quantity + ''}</span>
                 </div>
                 <Button onClick={() => dispatch(increaseCartQuantity(product))}>+</Button>
               </div>

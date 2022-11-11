@@ -7,7 +7,7 @@ const Store = () => {
 
   return (
     <>
-      <Container className="mb-4">
+      <Container className="mb-4 mt-5">
         <Row>
           <Col xs={6}>
             <h1>Store</h1>
